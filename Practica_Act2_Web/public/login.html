@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <!-- Este archivo contiene el formulario de inicio de sesión -->
   </head>
   <body>
     <h1>Log In</h1>
+    <!-- Formulario que envía los datos a /login por método POST -->
     <form id="loginForm" action="/login" method="POST">
       <label for="usuario">Username:</label>
+      <!-- Campo para el nombre de usuario -->
       <input type="text" id="usuario" name="usuario" required />
       <br />
       <label for="contra">Password:</label>
+      <!-- Campo para la contraseña -->
       <input type="password" id="contra" name="contra" required />
       <br />
       <button type="submit">Login</button>
     </form>
+    <!-- Al enviar el formulario, los datos se envían al servidor para validar el login -->
 </html>
